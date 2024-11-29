@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "hello-icp-backend": {
+      "main": "src/hello-icp-backend/main.mo",
+      "type": "motoko"
+    },
+    "hello-icp-frontend": {
+      "dependencies": [
+        "hello-icp-backend"
+      ],
+      "source": [
+        "src/hello-icp-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "hello-icp-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
