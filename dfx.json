@@ -4,9 +4,14 @@
       "main": "src/hello-icp-backend/main.mo",
       "type": "motoko"
     },
+    "counter-backend": {
+      "main": "src/counter-backend/main.mo",
+      "type": "motoko"
+    },
     "hello-icp-frontend": {
       "dependencies": [
-        "hello-icp-backend"
+        "hello-icp-backend",
+        "counter-backend"
       ],
       "source": [
         "src/hello-icp-frontend/dist"
